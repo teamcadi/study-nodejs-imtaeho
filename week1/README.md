@@ -1,12 +1,10 @@
 # Express.js 기초
 
----
-
 [Express - Node.js web application framework](https://expressjs.com/)
 
 - Node.js 진영에서 가장 많이 사용하는 프레임워크
 
-  ![Express%20Framework%201%20ae358f47d00343109b78e8b9cad22193/trends.png](Express%20Framework%201%20ae358f47d00343109b78e8b9cad22193/trends.png)
+  ![./readme/trends.png](./readme/trends.png)
 
 - 많은 라이브러리와 예제
 - 5.0 릴리즈 소식
@@ -14,8 +12,6 @@
   [Express 5로의 마이그레이션](https://expressjs.com/ko/guide/migrating-5.html)
 
 # NPM
-
----
 
 [npm](https://www.npmjs.com/)
 
@@ -26,8 +22,6 @@
 - `npm cli`를 통해서 외부 라이브러리를 설치할 수 있습니다.
 
 # Express로 백앤드 앱 만들기
-
----
 
 ```bash
 npm -v 6.14.x
