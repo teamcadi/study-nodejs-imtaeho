@@ -6,7 +6,9 @@ const morgan = require('morgan');
 // app.use((req, res, next) => {
 //   console.log('미들웨어 동작');
 // });
-
+app.use(express.json()); // -> (req,res,next)=>{ //로직; next(); }
+// 2
+app.use(express.urlencoded({ extended: true }));
 // 로거 만들기
 // 클라이언트에서 요청이 왔을 때 응답을 잘 했는지 못 했는지 로그를 남겨서 수집하는 것
 // app.use((req, res, next) => {
@@ -26,6 +28,11 @@ app.get('/', (req, res, next) => {
   res.status(200);
   res.send('비밀 데이터');
 });
+
+// 라우터 등록
+// /user/profile
+// /user/:id
+app.use('/user', require('./route'));
 
 app.listen(9001, () => {
   console.log('9001 실행 중');

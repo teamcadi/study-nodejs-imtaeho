@@ -10,6 +10,10 @@ const path = require('path');
 // 상대경로
 // app.use("/public", express.static("public"));
 
+// * 미들웨어
+// todo: 클라이언트가 서버로 요청, 서버는 응답
+// ? : 사용자 인증, 요청받은 데이터 검사(validator), 바디파서
+
 // 1
 app.use(express.json()); // -> (req,res,next)=>{ //로직; next(); }
 // 2
