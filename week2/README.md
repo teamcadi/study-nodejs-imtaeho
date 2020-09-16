@@ -54,7 +54,7 @@
 
   [Download Postman | Try Postman for Free](https://www.postman.com/downloads/)
 
-# BodyPaser
+# BodyParser
 
 - express 는 request의 body를 바로 볼 수 없음
 - 파싱(구문 분석) 후 확인 가능 즉, js에서 사용할 수 있도록 해줌
