@@ -1,16 +1,14 @@
 {
-  "name": "week6",
-  "version": "0.0.1",
-  "description": "파일 업로드 서버",
-  "main": "app.js",
+  "name": "profileAPI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "dev": "npx nodemon app.js",
+    "dev": "npx nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "nodejs"
-  ],
-  "author": "bbaktaeho",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
