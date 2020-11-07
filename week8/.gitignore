@@ -1,0 +1,5 @@
+
+node_modules
+
+# 프로젝트 환경 변수
+.env
