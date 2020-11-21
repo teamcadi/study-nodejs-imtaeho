@@ -1,4 +1,8 @@
-const authController = require('../controllers');
+const {
+  loginValidator,
+  registerValidator,
+} = require('../../middleware/auth.validator');
+const { register, login } = require('../controllers');
 const router = require('express').Router();
 
 /**
@@ -6,13 +10,13 @@ const router = require('express').Router();
  * @routes POST /auth/register
  * @request @body {email, name, password}
  */
-router.post('/register', authController.register);
+router.post('/register', registerValidator, register);
 
 /**
  * @description 로그인
  * @routes POST /auth/login
  * @request @body {email, password}
  */
-router.post('/login', authController.login);
+router.post('/login', loginValidator, login);
 
 module.exports = router;
