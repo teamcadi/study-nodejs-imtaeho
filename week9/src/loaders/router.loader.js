@@ -5,9 +5,9 @@ const authRouter = require('../api/auth/routes');
 
 const loadRouter = app => {
   // app.use('posts', postRouter);
-  // app.use('users', userRouter);
   // app.use('comments', commentRouter);
   app.use('/auth', authRouter);
+  app.use('/users', userRouter);
 
   // 없는 경로 처리
   app.use((req, res, next) => {

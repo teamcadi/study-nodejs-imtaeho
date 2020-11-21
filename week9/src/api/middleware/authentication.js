@@ -1,0 +1,3 @@
+const authentication = {
+  valid,
+};
