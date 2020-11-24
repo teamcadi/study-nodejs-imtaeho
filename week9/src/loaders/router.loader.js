@@ -4,7 +4,7 @@ const userRouter = require('../api/users/routes');
 const authRouter = require('../api/auth/routes');
 
 const loadRouter = app => {
-  // app.use('posts', postRouter);
+  app.use('/posts', postRouter);
   // app.use('comments', commentRouter);
   app.use('/auth', authRouter);
   app.use('/users', userRouter);

@@ -1,6 +1,6 @@
 const { findUser, updateUser, updateUserPw } = require('../services');
 
-// todo: validator
+// todo: 내가 쓴 글 조회
 const userController = {
   getUser: async (req, res, next) => {
     const { id } = req.user;
