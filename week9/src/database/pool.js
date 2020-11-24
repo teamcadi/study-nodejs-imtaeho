@@ -14,7 +14,8 @@ const pool = mysql.createPool({
 //   const conn = await pool.getConnection();
 
 //   // create database, table
-//   await conn.execute('create database board');
+//   // await conn.execute('create database board');
+//   // todo: post, comment, like, image
 // })();
 
 module.exports = {
